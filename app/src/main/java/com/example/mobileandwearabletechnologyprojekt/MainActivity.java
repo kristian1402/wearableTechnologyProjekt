@@ -1,6 +1,7 @@
 package com.example.mobileandwearabletechnologyprojekt;
 
 import android.Manifest;
+import androidx.core.app.ActivityCompat;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.hardware.camera2.CameraAccessException;
@@ -8,7 +9,6 @@ import android.hardware.camera2.CameraCaptureSession;
 import android.hardware.camera2.CameraDevice;
 import android.hardware.camera2.CameraManager;
 import android.hardware.camera2.CaptureRequest;
-import android.hardware.camera2.params.SessionConfiguration;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -16,9 +16,6 @@ import android.hardware.SensorManager;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -29,7 +26,7 @@ import android.widget.TextView;
 import java.util.Collections;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
-
+    private static final int CAMERA_PERMISSION_REQUEST = 1;
     private SensorManager sensorManager;
     private Sensor proximitySensor;
     private TextView proximityStatus;
@@ -42,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private boolean nearState = false;
     private long nearStartTime = 0;
     private Handler handler = new Handler(Looper.getMainLooper());
-    MediaPlayer mediaPlayer = new MediaPlayer();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                     @Override
                     public void run() {
                         long currentTime = System.currentTimeMillis();
-                        if (currentTime - nearStartTime >= 2000) {
+                        if (currentTime - nearStartTime >= 1000) {
                             openCameraForGestureRecognition();
                         }
                     }
@@ -91,6 +87,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
     private void openCameraForGestureRecognition() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
+            // Permission has not been granted; request it from the user.
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, CAMERA_PERMISSION_REQUEST);
+        }
         try {
             String cameraId = cameraManager.getCameraIdList()[1]; // You may need to choose a specific camera here
 
