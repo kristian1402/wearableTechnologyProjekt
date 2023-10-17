@@ -43,39 +43,33 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         float proximityValue = sensorEvent.values[0];
-
-        /*
         if (proximityValue < proximitySensor.getMaximumRange()) {
-            // Object is near the proximity sensor
             proximityStatus.setText("Near");
-        } else {
-            // Object is far from the proximity sensor
-            proximityStatus.setText("Far");
-        }
-
-         */
-        if (proximityValue < proximitySensor.getMaximumRange()) {
             if (!nearState) {
                 // Object is near the proximity sensor, start the timer
                 nearState = true;
                 nearStartTime = System.currentTimeMillis();
-            } else {
-                // Object is still near, check if it's been near for 2 seconds
-                long currentTime = System.currentTimeMillis();
-                if (currentTime - nearStartTime >= 2000) {
-                    // Object has been near for 2 seconds, change the color of textView2 to green
-                    textView2.setTextColor(getResources().getColor(android.R.color.holo_green_light));
-                }
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        long currentTime = System.currentTimeMillis();
+                        if (currentTime - nearStartTime >= 2000) {
+                            // Object has been near for 2 seconds, change the color of textView2 to green
+                            textView2.setTextColor(getResources().getColor(android.R.color.black));
+                            textView2.setText("2 Seconds");
+                        }
+                    }
+                }, 2000); // 2000 milliseconds = 2 seconds
             }
         } else {
             // Object is far from the proximity sensor
+            proximityStatus.setText("Far");
             nearState = false;
             nearStartTime = 0;
+            // Remove any pending callbacks to ensure the timer is not triggered when the object is far
+            handler.removeCallbacksAndMessages(null);
         }
     }
-
-    }
-
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         // Not used in this example
