@@ -13,12 +13,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-<<<<<<< Updated upstream
 import android.media.AudioManager;
-=======
-import android.content.res.AssetFileDescriptor;
-import android.content.res.AssetManager;
->>>>>>> Stashed changes
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,12 +24,6 @@ import android.view.KeyEvent;
 import android.view.Surface;
 import android.view.TextureView;
 import android.widget.TextView;
-import org.tensorflow.lite.Interpreter;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.nio.MappedByteBuffer;
-import java.nio.channels.FileChannel;
-
 
 import java.util.Collections;
 
@@ -53,9 +42,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private boolean nearState = false;
     private long nearStartTime = 0;
     private Handler handler = new Handler(Looper.getMainLooper());
-
-    AssetManager assetManager = this.getAssets();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -203,36 +189,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         if (cameraDevice != null) {
             cameraDevice.close();
             cameraDevice = null;
-        }
-    }
-
-    private MappedByteBuffer loadModelFile(AssetManager assetManager, String modelFileName) throws IOException {
-        AssetFileDescriptor fileDescriptor = assetManager.openFd(modelFileName);
-        FileInputStream inputStream = new FileInputStream(fileDescriptor.getFileDescriptor());
-        FileChannel fileChannel = inputStream.getChannel();
-        long startOffset = fileDescriptor.getStartOffset();
-        long declaredLength = fileDescriptor.getDeclaredLength();
-        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
-    }
-
-    // Example of how to use the Interpreter with your model file
-    private void runInference() {
-        try {
-            // Replace "your_model.tflite" with the actual name of your model file
-            String modelFileName = "model.tflite";
-
-            // Get the AssetManager from your application context
-            AssetManager assetManager = getApplicationContext().getAssets();
-
-            // Load the TensorFlow Lite model
-            Interpreter interpreter = new Interpreter(loadModelFile(assetManager, modelFileName));
-
-            // Now you can use the 'interpreter' to run inference with your model
-            // ...
-
-        } catch (IOException e) {
-            // Handle exceptions, such as file not found or invalid model format
-            e.printStackTrace();
         }
     }
 }
