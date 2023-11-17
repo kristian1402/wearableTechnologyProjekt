@@ -13,12 +13,9 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-<<<<<<< Updated upstream
 import android.media.AudioManager;
-=======
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
->>>>>>> Stashed changes
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
