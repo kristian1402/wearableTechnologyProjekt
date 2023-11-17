@@ -7,7 +7,8 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.PROXIMITY"/>
-<uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
 
     <application

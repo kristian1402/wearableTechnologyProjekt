@@ -13,12 +13,14 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.AudioManager;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.KeyEvent;
 import android.view.Surface;
 import android.view.TextureView;
 import android.widget.TextView;
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private CameraDevice cameraDevice;
     private CameraCaptureSession cameraCaptureSession;
     private TextureView textureView;
+    private AudioManager audioManager;
 
     // Timer variables
     private boolean nearState = false;
@@ -44,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
         proximityStatus = findViewById(R.id.proximityStatus);
         textureView = findViewById(R.id.textureView);
@@ -72,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                         long currentTime = System.currentTimeMillis();
                         if (currentTime - nearStartTime >= 1000) {
                             openCameraForGestureRecognition();
+                            togglePlayPause();
                         }
                     }
                 }, 2000); // 2000 milliseconds = 2 seconds
@@ -150,6 +156,18 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         } catch (CameraAccessException e) {
             e.printStackTrace();
+        }
+    }
+
+    private void togglePlayPause() {
+        if (audioManager.isMusicActive()) {
+            // Music is playing, pause it
+            audioManager.dispatchMediaKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_MEDIA_PAUSE));
+            audioManager.dispatchMediaKeyEvent(new KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_MEDIA_PAUSE));
+        } else {
+            // Music is not playing, play it
+            audioManager.dispatchMediaKeyEvent(new KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_MEDIA_PLAY));
+            audioManager.dispatchMediaKeyEvent(new KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_MEDIA_PLAY));
         }
     }
 
