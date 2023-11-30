@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.application'
-    id 'com.chaquo.python'
 }
 
 android {
@@ -15,27 +14,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-
-        python{
-            pip{
-                install "opencv-contrib-python-headless"
-                install "Keras==2.3.1"
-                install "tensorflow"
-                install "numpy"
-                install "pillow"
-            }
-        }
-
-        defaultConfig {
-            python {
-                version "3.8"
-                buildPython "\"C:\\Users\\khs14\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe\""
-            }
-
-            ndk {
-                abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
-            }
-        }
     }
 
     buildTypes {
@@ -52,7 +30,6 @@ android {
         viewBinding true
     }
 }
-
 
 dependencies {
 
