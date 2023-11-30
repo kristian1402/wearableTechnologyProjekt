@@ -171,6 +171,56 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
     }
 
+    private void increaseMediaVolume() {
+        // Get the current media volume
+        int currentVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+
+        // Get the maximum media volume
+        int maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+
+        // Check if the current volume is less than the maximum volume
+        if (currentVolume < maxVolume) {
+            // Increase the volume by a specific amount (you can adjust this value)
+            int newVolume = Math.min(currentVolume + 1, maxVolume);
+
+            // Set the new volume
+            audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, newVolume, 0);
+        }
+    }
+
+    private void decreaseMediaVolume() {
+        // Get the current media volume
+        int currentVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+
+        // Check if the current volume is greater than the minimum volume
+        if (currentVolume > 0) {
+            // Decrease the volume by a specific amount (you can adjust this value)
+            int newVolume = Math.max(currentVolume - 1, 0);
+
+            // Set the new volume
+            audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, newVolume, 0);
+        }
+    }
+
+    private void increaseMediaVolumeWithDelay() {
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                increaseMediaVolume();
+            }
+        }, 1000); // 1000 milliseconds (1 second) delay
+    }
+
+    private void decreaseMediaVolumeWithDelay() {
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                decreaseMediaVolume();
+            }
+        }, 1000); // 1000 milliseconds (1 second) delay
+    }
+
+
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
 
