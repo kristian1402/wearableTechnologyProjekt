@@ -1,0 +1,419 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:17:1-56:12
+INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:17:1-56:12
+INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:17:1-56:12
+INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:17:1-56:12
+MERGED from [androidx.databinding:viewbinding:7.3.0] C:\Users\chilo\.gradle\caches\transforms-3\860534ebd7c7e61cd6b0f2d2e74c1f6a\transformed\viewbinding-7.3.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\ad3190a30eddb31ee96a3e8caff8293c\transformed\navigation-fragment-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\db4f99aa42c7ed87f4d0e4e48aea52dd\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\7003f625395e0497bf57650524d1b5e2\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.1.0-alpha03] C:\Users\chilo\.gradle\caches\transforms-3\8943a4578f91a1b987e6786b58a8283d\transformed\window-1.1.0-alpha03\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] C:\Users\chilo\.gradle\caches\transforms-3\43cefbc423885f54e6d53eaf8c41de11\transformed\fragment-ktx-1.5.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\c5b9830f5c668780aa2d2184f89d2aad\transformed\navigation-ui-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\cc72803e4faf11b2937d4e8c1e76ec4e\transformed\navigation-runtime-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\57a5a8b05b89ed71a4a349635db69342\transformed\navigation-ui-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\5ecb4cb0c67a328d6f30942af92d981f\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\1117778072d846a3da60aef54323fcd1\transformed\activity-ktx-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\04d1236cbe3136c5a109b9a2b7669a10\transformed\navigation-common-ktx-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\c9fe693058846911cd5d3221da496b6e\transformed\navigation-common-2.5.3\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\1f87dda4f88b07b99a86d3e11fc011ed\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\chilo\.gradle\caches\transforms-3\1644e1f64d83823d23c0689ccd10d3f0\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\chilo\.gradle\caches\transforms-3\72aa730328c514c3aa253b5470951d74\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.camera:camera-view:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\ae976f93a6abb54ae0b9dff00a5af623\transformed\camera-view-1.2.0-alpha02\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\bb6b66df4c1bf34c0fd015f855cacfc1\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\5b1573326c7b95f77ae60b30a5250422\transformed\appcompat-1.5.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\6bccd6e8c6611371b45511cbb1350892\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\chilo\.gradle\caches\transforms-3\fdbc4ff0d89203966cffaf2f10990d8b\transformed\fragment-1.5.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\3452f0c958211a72aab08c567b7c82ce\transformed\activity-1.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\e1d92d6b4b3c84c88dd68ddf2f2c443e\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\82b2c31cbbc9a8aae769bf1591ee8d14\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\52f31b4c5ced32cc052ce79e99c0c1cc\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\191c0a99106159555d32d0381a7e84d7\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\0267042a052e56e231d9c76b0f66e0d1\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\904a6436e2cee5f78f259a33feb2a2bb\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\chilo\.gradle\caches\transforms-3\bfb2251567e486d8003cc53571cb11c9\transformed\core-ktx-1.8.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.camera:camera-lifecycle:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\f78203ade3d207a9be74af1a216fcf83\transformed\camera-lifecycle-1.2.0-alpha02\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.camera:camera-core:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\fcab072b9ff1127e688ca032ee669322\transformed\camera-core-1.2.0-alpha02\AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.mediapipe:tasks-vision:0.10.0] C:\Users\chilo\.gradle\caches\transforms-3\34c4944e022c56363ba84a5ff380826b\transformed\tasks-vision-0.10.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\63da66c0f8a19a92609f95bc865e1b0c\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\be3f63ad8222120556b347887a091298\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\cc837c2d3292d9b03390e257a6807d40\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\dc26592951df5d1b19e3964eab311b96\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\fb61f06c7305d710ebf84252f6841e3b\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\2cdb571e266a60dff67b85753d7de8fa\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\c8f9a2f070a8d8463e795bfc18d166cf\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\371fe13f113006944ab6b420e1ca0df8\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\chilo\.gradle\caches\transforms-3\60a34a298ab8d8198d359a7a2253defc\transformed\transition-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.8.0] C:\Users\chilo\.gradle\caches\transforms-3\fe47a1a42c9555e69e5746fdce17258f\transformed\core-1.8.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\c8c6729e409394eba69dbf0f986e467e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chilo\.gradle\caches\transforms-3\6c04f525a857679da1882948c7863b4a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\49ab26d19bcd60640e610ef5c9f319cf\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\fad6b66872d15704e6a111c55c111000\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\1fe2d8561d1d7a655e6b60923d26e74e\transformed\savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\fa444f3081f4fe5867cd7950a79329a5\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\chilo\.gradle\caches\transforms-3\6714eb484d053da325da439126095f1a\transformed\exifinterface-1.3.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\2df95f7483bec173ae355aba12b6a28c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\c84550b09f8e64a1277b2763e42743ae\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\06c817430c2a7ec8e34ee02198ccaabe\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\876d4bffadf16888d3e1a35afbec8ab3\transformed\lifecycle-livedata-core-ktx-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\chilo\.gradle\caches\transforms-3\05b3dd88c7dbc92fd28a61b7b76482e2\transformed\lifecycle-livedata-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\aded0548e6bf4162465dcb0f86f96127\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\chilo\.gradle\caches\transforms-3\75522d8988bdd082b8c064a03a5404c1\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.mediapipe:tasks-core:0.10.0] C:\Users\chilo\.gradle\caches\transforms-3\078da2a6ca72fdf7e9ad755ae0a98c0f\transformed\tasks-core-0.10.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\chilo\.gradle\caches\transforms-3\dede80c241c9a7aff3d59003e439de89\transformed\transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\77e00237f0c643bec1a5e5672e01bdd7\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\dc34acd2227e921dfef9f49b58bfc31b\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\4d804311f47bf54744de4995b2d24ab1\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\7f756ccfa2072bfafb13944e3655390a\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\chilo\.gradle\caches\transforms-3\f30ba90e7745cf9b707b7bde1b7f0db4\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\0f728385a6f79a8fcd960faa230ef13a\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:17:1-56:12
+INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:17:1-56:12
+INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:17:1-56:12
+	package
+		INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:17:1-56:12
+		INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:17:1-56:12
+		INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:19:5-51
+	xmlns:dist
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:18:5-61
+	android:versionCode
+		INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:17:1-56:12
+		INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:17:11-69
+dist:module
+ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:22:5-40
+	dist:instant
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:22:18-37
+uses-feature#android.hardware.camera
+ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:25:5-60
+	android:name
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:25:19-57
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:28:5-65
+	android:name
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:28:22-62
+application
+ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:30:5-54:19
+MERGED from [androidx.window:window:1.1.0-alpha03] C:\Users\chilo\.gradle\caches\transforms-3\8943a4578f91a1b987e6786b58a8283d\transformed\window-1.1.0-alpha03\AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.window:window:1.1.0-alpha03] C:\Users\chilo\.gradle\caches\transforms-3\8943a4578f91a1b987e6786b58a8283d\transformed\window-1.1.0-alpha03\AndroidManifest.xml:22:5-29:19
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\chilo\.gradle\caches\transforms-3\1644e1f64d83823d23c0689ccd10d3f0\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\chilo\.gradle\caches\transforms-3\1644e1f64d83823d23c0689ccd10d3f0\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\chilo\.gradle\caches\transforms-3\72aa730328c514c3aa253b5470951d74\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\chilo\.gradle\caches\transforms-3\72aa730328c514c3aa253b5470951d74\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:24:5-35:19
+MERGED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:24:5-35:19
+MERGED from [androidx.camera:camera-core:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\fcab072b9ff1127e688ca032ee669322\transformed\camera-core-1.2.0-alpha02\AndroidManifest.xml:24:5-35:19
+MERGED from [androidx.camera:camera-core:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\fcab072b9ff1127e688ca032ee669322\transformed\camera-core-1.2.0-alpha02\AndroidManifest.xml:24:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.8.0] C:\Users\chilo\.gradle\caches\transforms-3\fe47a1a42c9555e69e5746fdce17258f\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.8.0] C:\Users\chilo\.gradle\caches\transforms-3\fe47a1a42c9555e69e5746fdce17258f\transformed\core-1.8.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chilo\.gradle\caches\transforms-3\6c04f525a857679da1882948c7863b4a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chilo\.gradle\caches\transforms-3\6c04f525a857679da1882948c7863b4a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\2df95f7483bec173ae355aba12b6a28c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\2df95f7483bec173ae355aba12b6a28c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\c84550b09f8e64a1277b2763e42743ae\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\c84550b09f8e64a1277b2763e42743ae\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:25:5-39:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.8.0] C:\Users\chilo\.gradle\caches\transforms-3\fe47a1a42c9555e69e5746fdce17258f\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:35:9-35
+	android:label
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:33:9-41
+	tools:ignore
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:38:9-35
+	android:roundIcon
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:34:9-54
+	android:icon
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:32:9-43
+	android:allowBackup
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:31:9-35
+	android:theme
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:37:9-55
+	android:taskAffinity
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:36:9-32
+activity#com.google.mediapipe.examples.gesturerecognizer.MainActivity
+ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:40:9-53:20
+	android:exported
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:42:13-36
+	android:name
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:41:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:43:13-47:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:44:17-69
+	android:name
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:44:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:46:17-77
+	android:name
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:46:27-74
+meta-data#android.notch_support
+ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:50:13-52:40
+	android:value
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:52:17-37
+	android:name
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml:51:17-53
+uses-sdk
+INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.3.0] C:\Users\chilo\.gradle\caches\transforms-3\860534ebd7c7e61cd6b0f2d2e74c1f6a\transformed\viewbinding-7.3.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.databinding:viewbinding:7.3.0] C:\Users\chilo\.gradle\caches\transforms-3\860534ebd7c7e61cd6b0f2d2e74c1f6a\transformed\viewbinding-7.3.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\ad3190a30eddb31ee96a3e8caff8293c\transformed\navigation-fragment-ktx-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\ad3190a30eddb31ee96a3e8caff8293c\transformed\navigation-fragment-ktx-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\db4f99aa42c7ed87f4d0e4e48aea52dd\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\db4f99aa42c7ed87f4d0e4e48aea52dd\transformed\navigation-fragment-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\7003f625395e0497bf57650524d1b5e2\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\7003f625395e0497bf57650524d1b5e2\transformed\slidingpanelayout-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.1.0-alpha03] C:\Users\chilo\.gradle\caches\transforms-3\8943a4578f91a1b987e6786b58a8283d\transformed\window-1.1.0-alpha03\AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.1.0-alpha03] C:\Users\chilo\.gradle\caches\transforms-3\8943a4578f91a1b987e6786b58a8283d\transformed\window-1.1.0-alpha03\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] C:\Users\chilo\.gradle\caches\transforms-3\43cefbc423885f54e6d53eaf8c41de11\transformed\fragment-ktx-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.5.4] C:\Users\chilo\.gradle\caches\transforms-3\43cefbc423885f54e6d53eaf8c41de11\transformed\fragment-ktx-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\c5b9830f5c668780aa2d2184f89d2aad\transformed\navigation-ui-ktx-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\c5b9830f5c668780aa2d2184f89d2aad\transformed\navigation-ui-ktx-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\cc72803e4faf11b2937d4e8c1e76ec4e\transformed\navigation-runtime-ktx-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\cc72803e4faf11b2937d4e8c1e76ec4e\transformed\navigation-runtime-ktx-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\57a5a8b05b89ed71a4a349635db69342\transformed\navigation-ui-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\57a5a8b05b89ed71a4a349635db69342\transformed\navigation-ui-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\5ecb4cb0c67a328d6f30942af92d981f\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\5ecb4cb0c67a328d6f30942af92d981f\transformed\navigation-runtime-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\1117778072d846a3da60aef54323fcd1\transformed\activity-ktx-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\1117778072d846a3da60aef54323fcd1\transformed\activity-ktx-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\04d1236cbe3136c5a109b9a2b7669a10\transformed\navigation-common-ktx-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\04d1236cbe3136c5a109b9a2b7669a10\transformed\navigation-common-ktx-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\c9fe693058846911cd5d3221da496b6e\transformed\navigation-common-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.5.3] C:\Users\chilo\.gradle\caches\transforms-3\c9fe693058846911cd5d3221da496b6e\transformed\navigation-common-2.5.3\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\1f87dda4f88b07b99a86d3e11fc011ed\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\1f87dda4f88b07b99a86d3e11fc011ed\transformed\lifecycle-viewmodel-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\chilo\.gradle\caches\transforms-3\1644e1f64d83823d23c0689ccd10d3f0\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.7.0] C:\Users\chilo\.gradle\caches\transforms-3\1644e1f64d83823d23c0689ccd10d3f0\transformed\material-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\chilo\.gradle\caches\transforms-3\72aa730328c514c3aa253b5470951d74\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\chilo\.gradle\caches\transforms-3\72aa730328c514c3aa253b5470951d74\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.camera:camera-view:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\ae976f93a6abb54ae0b9dff00a5af623\transformed\camera-view-1.2.0-alpha02\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.camera:camera-view:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\ae976f93a6abb54ae0b9dff00a5af623\transformed\camera-view-1.2.0-alpha02\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\bb6b66df4c1bf34c0fd015f855cacfc1\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\bb6b66df4c1bf34c0fd015f855cacfc1\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\5b1573326c7b95f77ae60b30a5250422\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\5b1573326c7b95f77ae60b30a5250422\transformed\appcompat-1.5.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\6bccd6e8c6611371b45511cbb1350892\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\6bccd6e8c6611371b45511cbb1350892\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\chilo\.gradle\caches\transforms-3\fdbc4ff0d89203966cffaf2f10990d8b\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\chilo\.gradle\caches\transforms-3\fdbc4ff0d89203966cffaf2f10990d8b\transformed\fragment-1.5.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\3452f0c958211a72aab08c567b7c82ce\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.5.1] C:\Users\chilo\.gradle\caches\transforms-3\3452f0c958211a72aab08c567b7c82ce\transformed\activity-1.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\e1d92d6b4b3c84c88dd68ddf2f2c443e\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\e1d92d6b4b3c84c88dd68ddf2f2c443e\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\82b2c31cbbc9a8aae769bf1591ee8d14\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\82b2c31cbbc9a8aae769bf1591ee8d14\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\52f31b4c5ced32cc052ce79e99c0c1cc\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\52f31b4c5ced32cc052ce79e99c0c1cc\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\191c0a99106159555d32d0381a7e84d7\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\191c0a99106159555d32d0381a7e84d7\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\0267042a052e56e231d9c76b0f66e0d1\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\0267042a052e56e231d9c76b0f66e0d1\transformed\lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\904a6436e2cee5f78f259a33feb2a2bb\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\904a6436e2cee5f78f259a33feb2a2bb\transformed\lifecycle-runtime-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\chilo\.gradle\caches\transforms-3\bfb2251567e486d8003cc53571cb11c9\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.8.0] C:\Users\chilo\.gradle\caches\transforms-3\bfb2251567e486d8003cc53571cb11c9\transformed\core-ktx-1.8.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:21:5-22:38
+MERGED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:21:5-22:38
+MERGED from [androidx.camera:camera-lifecycle:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\f78203ade3d207a9be74af1a216fcf83\transformed\camera-lifecycle-1.2.0-alpha02\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.camera:camera-lifecycle:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\f78203ade3d207a9be74af1a216fcf83\transformed\camera-lifecycle-1.2.0-alpha02\AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.camera:camera-core:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\fcab072b9ff1127e688ca032ee669322\transformed\camera-core-1.2.0-alpha02\AndroidManifest.xml:21:5-22:38
+MERGED from [androidx.camera:camera-core:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\fcab072b9ff1127e688ca032ee669322\transformed\camera-core-1.2.0-alpha02\AndroidManifest.xml:21:5-22:38
+MERGED from [com.google.mediapipe:tasks-vision:0.10.0] C:\Users\chilo\.gradle\caches\transforms-3\34c4944e022c56363ba84a5ff380826b\transformed\tasks-vision-0.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.mediapipe:tasks-vision:0.10.0] C:\Users\chilo\.gradle\caches\transforms-3\34c4944e022c56363ba84a5ff380826b\transformed\tasks-vision-0.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\63da66c0f8a19a92609f95bc865e1b0c\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\63da66c0f8a19a92609f95bc865e1b0c\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\be3f63ad8222120556b347887a091298\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\be3f63ad8222120556b347887a091298\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\cc837c2d3292d9b03390e257a6807d40\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\cc837c2d3292d9b03390e257a6807d40\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\dc26592951df5d1b19e3964eab311b96\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\dc26592951df5d1b19e3964eab311b96\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\fb61f06c7305d710ebf84252f6841e3b\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\fb61f06c7305d710ebf84252f6841e3b\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\2cdb571e266a60dff67b85753d7de8fa\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\2cdb571e266a60dff67b85753d7de8fa\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\c8f9a2f070a8d8463e795bfc18d166cf\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\c8f9a2f070a8d8463e795bfc18d166cf\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\371fe13f113006944ab6b420e1ca0df8\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\371fe13f113006944ab6b420e1ca0df8\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\chilo\.gradle\caches\transforms-3\60a34a298ab8d8198d359a7a2253defc\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] C:\Users\chilo\.gradle\caches\transforms-3\60a34a298ab8d8198d359a7a2253defc\transformed\transition-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\chilo\.gradle\caches\transforms-3\fe47a1a42c9555e69e5746fdce17258f\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.8.0] C:\Users\chilo\.gradle\caches\transforms-3\fe47a1a42c9555e69e5746fdce17258f\transformed\core-1.8.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\c8c6729e409394eba69dbf0f986e467e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\c8c6729e409394eba69dbf0f986e467e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chilo\.gradle\caches\transforms-3\6c04f525a857679da1882948c7863b4a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chilo\.gradle\caches\transforms-3\6c04f525a857679da1882948c7863b4a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\49ab26d19bcd60640e610ef5c9f319cf\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\49ab26d19bcd60640e610ef5c9f319cf\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\fad6b66872d15704e6a111c55c111000\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\fad6b66872d15704e6a111c55c111000\transformed\savedstate-ktx-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\1fe2d8561d1d7a655e6b60923d26e74e\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\1fe2d8561d1d7a655e6b60923d26e74e\transformed\savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\fa444f3081f4fe5867cd7950a79329a5\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\fa444f3081f4fe5867cd7950a79329a5\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\chilo\.gradle\caches\transforms-3\6714eb484d053da325da439126095f1a\transformed\exifinterface-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.2] C:\Users\chilo\.gradle\caches\transforms-3\6714eb484d053da325da439126095f1a\transformed\exifinterface-1.3.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\2df95f7483bec173ae355aba12b6a28c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\2df95f7483bec173ae355aba12b6a28c\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\c84550b09f8e64a1277b2763e42743ae\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\c84550b09f8e64a1277b2763e42743ae\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\06c817430c2a7ec8e34ee02198ccaabe\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\06c817430c2a7ec8e34ee02198ccaabe\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\876d4bffadf16888d3e1a35afbec8ab3\transformed\lifecycle-livedata-core-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\876d4bffadf16888d3e1a35afbec8ab3\transformed\lifecycle-livedata-core-ktx-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\chilo\.gradle\caches\transforms-3\05b3dd88c7dbc92fd28a61b7b76482e2\transformed\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\chilo\.gradle\caches\transforms-3\05b3dd88c7dbc92fd28a61b7b76482e2\transformed\lifecycle-livedata-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\aded0548e6bf4162465dcb0f86f96127\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\chilo\.gradle\caches\transforms-3\aded0548e6bf4162465dcb0f86f96127\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\chilo\.gradle\caches\transforms-3\75522d8988bdd082b8c064a03a5404c1\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\chilo\.gradle\caches\transforms-3\75522d8988bdd082b8c064a03a5404c1\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.mediapipe:tasks-core:0.10.0] C:\Users\chilo\.gradle\caches\transforms-3\078da2a6ca72fdf7e9ad755ae0a98c0f\transformed\tasks-core-0.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.mediapipe:tasks-core:0.10.0] C:\Users\chilo\.gradle\caches\transforms-3\078da2a6ca72fdf7e9ad755ae0a98c0f\transformed\tasks-core-0.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\chilo\.gradle\caches\transforms-3\dede80c241c9a7aff3d59003e439de89\transformed\transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\chilo\.gradle\caches\transforms-3\dede80c241c9a7aff3d59003e439de89\transformed\transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\77e00237f0c643bec1a5e5672e01bdd7\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\77e00237f0c643bec1a5e5672e01bdd7\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\dc34acd2227e921dfef9f49b58bfc31b\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\dc34acd2227e921dfef9f49b58bfc31b\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\4d804311f47bf54744de4995b2d24ab1\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\4d804311f47bf54744de4995b2d24ab1\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\7f756ccfa2072bfafb13944e3655390a\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\chilo\.gradle\caches\transforms-3\7f756ccfa2072bfafb13944e3655390a\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\chilo\.gradle\caches\transforms-3\f30ba90e7745cf9b707b7bde1b7f0db4\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\chilo\.gradle\caches\transforms-3\f30ba90e7745cf9b707b7bde1b7f0db4\transformed\firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\0f728385a6f79a8fcd960faa230ef13a\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\chilo\.gradle\caches\transforms-3\0f728385a6f79a8fcd960faa230ef13a\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chilo\Desktop\mediapipe-main\examples\gesture_recognizer\android\app\src\main\AndroidManifest.xml
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.1.0-alpha03] C:\Users\chilo\.gradle\caches\transforms-3\8943a4578f91a1b987e6786b58a8283d\transformed\window-1.1.0-alpha03\AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.window:window:1.1.0-alpha03] C:\Users\chilo\.gradle\caches\transforms-3\8943a4578f91a1b987e6786b58a8283d\transformed\window-1.1.0-alpha03\AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.window:window:1.1.0-alpha03] C:\Users\chilo\.gradle\caches\transforms-3\8943a4578f91a1b987e6786b58a8283d\transformed\window-1.1.0-alpha03\AndroidManifest.xml:24:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.1.0-alpha03] C:\Users\chilo\.gradle\caches\transforms-3\8943a4578f91a1b987e6786b58a8283d\transformed\window-1.1.0-alpha03\AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from [androidx.window:window:1.1.0-alpha03] C:\Users\chilo\.gradle\caches\transforms-3\8943a4578f91a1b987e6786b58a8283d\transformed\window-1.1.0-alpha03\AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.window:window:1.1.0-alpha03] C:\Users\chilo\.gradle\caches\transforms-3\8943a4578f91a1b987e6786b58a8283d\transformed\window-1.1.0-alpha03\AndroidManifest.xml:27:13-51
+service#androidx.camera.core.impl.MetadataHolderService
+ADDED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:25:9-34:19
+MERGED from [androidx.camera:camera-core:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\fcab072b9ff1127e688ca032ee669322\transformed\camera-core-1.2.0-alpha02\AndroidManifest.xml:30:9-34:78
+MERGED from [androidx.camera:camera-core:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\fcab072b9ff1127e688ca032ee669322\transformed\camera-core-1.2.0-alpha02\AndroidManifest.xml:30:9-34:78
+	tools:node
+		ADDED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:30:13-31
+	android:enabled
+		ADDED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:27:13-36
+	android:exported
+		ADDED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:28:13-37
+	tools:ignore
+		ADDED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:29:13-75
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:26:13-75
+meta-data#androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER
+ADDED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:31:13-33:89
+	android:value
+		ADDED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:33:17-86
+	android:name
+		ADDED from [androidx.camera:camera-camera2:1.2.0-alpha02] C:\Users\chilo\.gradle\caches\transforms-3\7dc1b62e6ace847e14725acbea9d4364\transformed\camera-camera2-1.2.0-alpha02\AndroidManifest.xml:32:17-103
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chilo\.gradle\caches\transforms-3\6c04f525a857679da1882948c7863b4a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chilo\.gradle\caches\transforms-3\6c04f525a857679da1882948c7863b4a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\c84550b09f8e64a1277b2763e42743ae\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\chilo\.gradle\caches\transforms-3\c84550b09f8e64a1277b2763e42743ae\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\chilo\.gradle\caches\transforms-3\c806c9fa5bd52ec02b55f13c43b37dab\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chilo\.gradle\caches\transforms-3\6c04f525a857679da1882948c7863b4a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chilo\.gradle\caches\transforms-3\6c04f525a857679da1882948c7863b4a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\chilo\.gradle\caches\transforms-3\6c04f525a857679da1882948c7863b4a\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:25:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:26:22-64
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\7e5f35b40fb976bde02bfd095ad946a0\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\chilo\.gradle\caches\transforms-3\a1f28e24b87200fbe2183ee1a77a3b1b\transformed\transport-runtime-3.1.0\AndroidManifest.xml:33:13-132

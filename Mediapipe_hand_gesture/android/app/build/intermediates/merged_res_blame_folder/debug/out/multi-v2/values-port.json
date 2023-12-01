@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.google.mediapipe.examples.gesturerecognizer.app-mergeDebugResources-47:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\chilo\\.gradle\\caches\\transforms-3\\5b1573326c7b95f77ae60b30a5250422\\transformed\\appcompat-1.5.1\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
