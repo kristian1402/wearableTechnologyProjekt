@@ -1,43 +1,39 @@
-# Importing all necessary libraries
 import cv2
 import os
 
-# Read the video from specified path
-cam = cv2.VideoCapture("C:\\Users\\chilo\\OneDrive - Aalborg Universitet\\Medialogi\\7. Semester\\Project\\Data\\picwall.mp4")
+def split_video_to_frames(video_path, output_folder):
+    # Create output folder if it doesn't exist
+    os.makedirs(output_folder, exist_ok=True)
 
-try:
+    # Open the video file
+    video_capture = cv2.VideoCapture(video_path)
 
-    # creating a folder named data
-    if not os.path.exists('data'):
-        os.makedirs('data')
+    # Get video information
+    fps = int(video_capture.get(cv2.CAP_PROP_FPS))
+    frame_count = int(video_capture.get(cv2.CAP_PROP_FRAME_COUNT))
 
-# if not created then raise error
-except OSError:
-    print('Error: Creating directory of data')
+    # Loop through each frame and save it as a grayscale image
+    for frame_number in range(frame_count):
+        ret, frame = video_capture.read()
+        if not ret:
+            break
 
-# frame
-i = 0
-currentframe = 0
-frame_skip = 20
+        # Convert frame to grayscale
+        #gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-while (True):
+        # Save grayscale frame as an image
+        frame_path = os.path.join(output_folder, f"none{frame_number:04d}.png")
+        cv2.imwrite(frame_path, frame)
 
-    # reading from frame
-    ret, frame = cam.read()
+    # Release the video capture object
+    video_capture.release()
 
-    if not ret:
-        break
-    if i > frame_skip - 1:
-        currentframe += 1
-        # if video is still left continue creating images
-        name = './data/frame' + str(currentframe) + '.jpg'
-        print('Creating...' + name)
+if __name__ == "__main__":
+    # Replace 'your_video.mp4' with the path to your video file
+    video_path = 'none.mp4'
 
-        # writing the extracted images
-        cv2.imwrite(name, frame)
-        i = 0
-        continue
-    i += 1
+    # Specify the output folder
+    output_folder = 'Data/none'
 
-cam.release()
-cv2.destroyAllWindows()
+    split_video_to_frames(video_path, output_folder)
+    print(f"Grayscale frames extracted and saved in the '{output_folder}' folder.")
