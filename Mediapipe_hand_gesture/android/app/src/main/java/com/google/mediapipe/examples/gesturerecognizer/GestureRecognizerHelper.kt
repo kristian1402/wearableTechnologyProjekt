@@ -68,7 +68,7 @@ class GestureRecognizerHelper(
             }
         }
 
-        baseOptionBuilder.setModelAssetPath(MP_RECOGNIZER_TASK)
+        baseOptionBuilder.setModelAssetPath("retrained.task")
 
         try {
             val baseOptions = baseOptionBuilder.build()
