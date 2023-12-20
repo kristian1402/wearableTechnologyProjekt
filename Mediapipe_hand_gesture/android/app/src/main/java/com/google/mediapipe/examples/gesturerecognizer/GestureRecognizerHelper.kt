@@ -68,6 +68,7 @@ class GestureRecognizerHelper(
             DELEGATE_CPU -> {
                 baseOptionBuilder.setDelegate(Delegate.CPU)
             }
+
             DELEGATE_GPU -> {
                 baseOptionBuilder.setDelegate(Delegate.GPU)
             }
@@ -297,7 +298,6 @@ class GestureRecognizerHelper(
         return gestureRecognizer == null
     }
 
-    // Return the recognition result to the GestureRecognizerHelper's caller
     private fun returnLivestreamResult(
         result: GestureRecognizerResult, input: MPImage
     ) {
@@ -343,4 +343,64 @@ class GestureRecognizerHelper(
         fun onError(error: String, errorCode: Int = OTHER_ERROR)
         fun onResults(resultBundle: ResultBundle)
     }
+
+    class GestureListenerTest : GestureRecognizerListener {
+        override fun onError(error: String, errorCode: Int) {
+            // Handle error
+            println("Error: $error, Code: $errorCode")
+        }
+
+        override fun onResults(resultBundle: ResultBundle) {
+            val results = resultBundle.results
+
+            for (result in results) {
+                val gestures = result.gestures()
+                for (gesture in gestures) {
+                    for (category in gesture) {
+                        // Check the recognized gesture and perform actions accordingly
+                        when (category.displayName()) {
+                            "Pointing_Up" -> {
+                                // Run code for pointing up gesture
+                                // Example: trigger some action
+                                triggerPointingUpAction()
+                            }
+
+                            "Open_Palm" -> {
+                                // Run code for another gesture
+                                // Example: trigger a different action
+                                triggerPalmAction()
+                            }
+
+                            "Closed_Fist" -> {
+                                triggerClosedAction()
+                            }
+                            // Add more cases for other gestures as needed
+                            else -> {
+                                // Handle unrecognized or additional gestures
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private fun triggerPointingUpAction() {
+            // Your code to handle the pointing up gesture
+            // Example: show a message, start an animation, etc.
+            println("Pointing Up Gesture Recognized!")
+        }
+
+        private fun triggerPalmAction() {
+            // Your code to handle another gesture
+            // Example: perform a specific action
+            println("Palm Recognized!")
+        }
+
+        private fun triggerClosedAction() {
+            // Your code to handle another gesture
+            // Example: perform a specific action
+            println("Closed fist Recognized!")
+        }
+    }
 }
+
