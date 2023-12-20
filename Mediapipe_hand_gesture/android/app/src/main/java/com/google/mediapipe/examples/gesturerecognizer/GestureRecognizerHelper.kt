@@ -15,24 +15,25 @@
  */
 package com.google.mediapipe.examples.gesturerecognizer
 
+import android.content.ComponentName
+import android.media.MediaMetadata
+import android.os.Bundle
 import android.content.Context
 import android.media.AudioManager
 import android.view.KeyEvent
 import android.graphics.Bitmap
 import android.graphics.Matrix
-import android.media.AudioAttributes
-import android.media.AudioFocusRequest
 import android.media.MediaMetadataRetriever
-import android.media.MediaPlayer
+import android.media.session.MediaController
+import android.media.session.MediaSession
+import android.media.session.PlaybackState
 import android.net.Uri
-import android.os.Build
 import android.os.Handler
 import android.os.Looper
 import android.os.SystemClock
 import android.util.Log
 import androidx.annotation.VisibleForTesting
 import androidx.camera.core.ImageProxy
-import androidx.core.content.ContextCompat.getSystemService
 import com.google.mediapipe.framework.image.BitmapImageBuilder
 import com.google.mediapipe.framework.image.MPImage
 import com.google.mediapipe.tasks.core.BaseOptions
@@ -49,6 +50,7 @@ class GestureRecognizerHelper(
     var runningMode: RunningMode = RunningMode.LIVE_STREAM,
     val context: Context,
     val gestureRecognizerListener: GestureRecognizerListener? = null
+
 ) {
 
     private var gestureRecognizer: GestureRecognizer? = null
@@ -271,6 +273,18 @@ class GestureRecognizerHelper(
                 if (category.categoryName() == "stop_start") {
                     triggerPalmAction(context)
                 }
+                else if (category.categoryName() == "volume_up") {
+                    triggerVolumeUpAction()
+                }
+                else if (category.categoryName() == "volume_down") {
+                    triggerVolumeDownAction()
+                }
+                else if (category.categoryName() == "next") {
+                    triggerNextAction()
+                }
+                else if (category.categoryName() == "prev") {
+                    triggerPrevAction()
+                }
             }
         }
         gestureRecognizerListener?.onResults(
@@ -291,19 +305,26 @@ class GestureRecognizerHelper(
         return gestureRecognizer == null
     }
 
-    fun triggerPointingUpAction() {
-        println("Pointing Up Gesture Recognized!")
+    fun triggerVolumeUpAction() {
+        increaseVolume(context)
+    }
+
+    fun triggerVolumeDownAction() {
+        decreaseVolume(context)
+    }
+
+    fun triggerNextAction() {
+        skipToNext(context)
+    }
+
+    fun triggerPrevAction() {
+        skipToPrevious(context)
     }
 
     fun triggerPalmAction(context: Context) {
-        Log.d("play/pauseFunction", "in Play/Pause function")
         togglePlayPause(context)
-
     }
 
-    fun triggerPointingDownAction() {
-        println("Pointing Down Gesture Recognized!")
-    }
 
     private var lastToggleTime: Long = 0
     private val toggleDelay: Long = 2000
@@ -334,6 +355,74 @@ class GestureRecognizerHelper(
             }, toggleDelay)
         }
     }
+
+    fun increaseVolume(context: Context) {
+        val currentTime = System.currentTimeMillis()
+
+        if (currentTime - lastToggleTime > toggleDelay) {
+            lastToggleTime = currentTime
+
+            val audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+
+            // Increase the volume (adjust as needed)
+            audioManager.adjustVolume(AudioManager.ADJUST_RAISE, AudioManager.FLAG_PLAY_SOUND)
+        } else {
+            // Handle consecutive toggles within the delay period (optional)
+            handler.removeCallbacksAndMessages(null)
+            handler.postDelayed({
+                lastToggleTime = System.currentTimeMillis()
+            }, toggleDelay/2)
+        }
+    }
+
+    fun decreaseVolume(context: Context) {
+        val currentTime = System.currentTimeMillis()
+
+        if (currentTime - lastToggleTime > toggleDelay) {
+            lastToggleTime = currentTime
+
+            val audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+
+            // Decrease the volume (adjust as needed)
+            audioManager.adjustVolume(AudioManager.ADJUST_LOWER, AudioManager.FLAG_PLAY_SOUND)
+        } else {
+            // Handle consecutive toggles within the delay period (optional)
+            handler.removeCallbacksAndMessages(null)
+            handler.postDelayed({
+                lastToggleTime = System.currentTimeMillis()
+            }, toggleDelay/2)
+        }
+    }
+
+
+    fun skipToNext(context: Context) {
+        performMediaAction(context, KeyEvent.KEYCODE_MEDIA_NEXT)
+    }
+
+    fun skipToPrevious(context: Context) {
+        performMediaAction(context, KeyEvent.KEYCODE_MEDIA_PREVIOUS)
+    }
+
+    private fun performMediaAction(context: Context, keyCode: Int) {
+        val currentTime = System.currentTimeMillis()
+
+        if (currentTime - lastToggleTime > toggleDelay) {
+            lastToggleTime = currentTime
+
+            val audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+
+            // Simulate pressing the media button (Next/Previous)
+            audioManager.dispatchMediaKeyEvent(KeyEvent(KeyEvent.ACTION_DOWN, keyCode))
+            audioManager.dispatchMediaKeyEvent(KeyEvent(KeyEvent.ACTION_UP, keyCode))
+        } else {
+            // Handle consecutive clicks within the delay period (optional)
+            handler.removeCallbacksAndMessages(null)
+            handler.postDelayed({
+                lastToggleTime = System.currentTimeMillis()
+            }, toggleDelay/2)
+        }
+    }
+
 
     companion object {
         val TAG = "GestureRecognizerHelper ${this.hashCode()}"
