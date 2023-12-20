@@ -16,6 +16,7 @@
 package com.google.mediapipe.examples.gesturerecognizer
 
 import android.content.Context
+import android.media.AudioManager
 import android.graphics.Bitmap
 import android.graphics.Matrix
 import android.media.MediaMetadataRetriever
@@ -24,6 +25,7 @@ import android.os.SystemClock
 import android.util.Log
 import androidx.annotation.VisibleForTesting
 import androidx.camera.core.ImageProxy
+import androidx.core.content.ContextCompat.getSystemService
 import com.google.mediapipe.framework.image.BitmapImageBuilder
 import com.google.mediapipe.framework.image.MPImage
 import com.google.mediapipe.tasks.core.BaseOptions
@@ -42,8 +44,6 @@ class GestureRecognizerHelper(
     val gestureRecognizerListener: GestureRecognizerListener? = null
 ) {
 
-    // For this example this needs to be a var so it can be reset on changes. If the GestureRecognizer
-    // will not change, a lazy val would be preferable.
     private var gestureRecognizer: GestureRecognizer? = null
 
     init {
@@ -55,15 +55,9 @@ class GestureRecognizerHelper(
         gestureRecognizer = null
     }
 
-    // Initialize the gesture recognizer using current settings on the
-    // thread that is using it. CPU can be used with recognizers
-    // that are created on the main thread and used on a background thread, but
-    // the GPU delegate needs to be used on the thread that initialized the recognizer
     fun setupGestureRecognizer() {
-        // Set general recognition options, including number of used threads
         val baseOptionBuilder = BaseOptions.builder()
 
-        // Use the specified hardware for running the model. Default to CPU
         when (currentDelegate) {
             DELEGATE_CPU -> {
                 baseOptionBuilder.setDelegate(Delegate.CPU)
@@ -114,13 +108,11 @@ class GestureRecognizerHelper(
         }
     }
 
-    // Convert the ImageProxy to MP Image and feed it to GestureRecognizer.
     fun recognizeLiveStream(
         imageProxy: ImageProxy,
     ) {
         val frameTime = SystemClock.uptimeMillis()
 
-        // Copy out RGB bits from the frame to a bitmap buffer
         val bitmapBuffer = Bitmap.createBitmap(
             imageProxy.width, imageProxy.height, Bitmap.Config.ARGB_8888
         )
@@ -128,16 +120,12 @@ class GestureRecognizerHelper(
         imageProxy.close()
 
         val matrix = Matrix().apply {
-            // Rotate the frame received from the camera to be in the same direction as it'll be shown
             postRotate(imageProxy.imageInfo.rotationDegrees.toFloat())
-
-            // flip image since we only support front camera
             postScale(
                 -1f, 1f, imageProxy.width.toFloat(), imageProxy.height.toFloat()
             )
         }
 
-        // Rotate bitmap to match what our model expects
         val rotatedBitmap = Bitmap.createBitmap(
             bitmapBuffer,
             0,
@@ -148,24 +136,16 @@ class GestureRecognizerHelper(
             true
         )
 
-        // Convert the input Bitmap object to an MPImage object to run inference
         val mpImage = BitmapImageBuilder(rotatedBitmap).build()
 
         recognizeAsync(mpImage, frameTime)
     }
 
-    // Run hand gesture recognition using MediaPipe Gesture Recognition API
     @VisibleForTesting
     fun recognizeAsync(mpImage: MPImage, frameTime: Long) {
-        // As we're using running mode LIVE_STREAM, the recognition result will
-        // be returned in returnLivestreamResult function
         gestureRecognizer?.recognizeAsync(mpImage, frameTime)
     }
 
-    // Accepts the URI for a video file loaded from the user's gallery and attempts to run
-    // gesture recognizer inference on the video. This process will evaluate
-    // every frame in the video and attach the results to a bundle that will be
-    // returned.
     fun recognizeVideoFile(
         videoUri: Uri,
         inferenceIntervalMs: Long
@@ -177,53 +157,40 @@ class GestureRecognizerHelper(
             )
         }
 
-        // Inference time is the difference between the system time at the start and finish of the
-        // process
         val startTime = SystemClock.uptimeMillis()
 
         var didErrorOccurred = false
 
-        // Load frames from the video and run the gesture recognizer.
         val retriever = MediaMetadataRetriever()
         retriever.setDataSource(context, videoUri)
         val videoLengthMs =
             retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION)
                 ?.toLong()
 
-        // Note: We need to read width/height from frame instead of getting the width/height
-        // of the video directly because MediaRetriever returns frames that are smaller than the
-        // actual dimension of the video file.
         val firstFrame = retriever.getFrameAtTime(0)
         val width = firstFrame?.width
         val height = firstFrame?.height
 
-        // If the video is invalid, returns a null recognition result
         if ((videoLengthMs == null) || (width == null) || (height == null)) return null
 
-        // Next, we'll get one frame every frameInterval ms, then run recognizer
-        // on these frames.
         val resultList = mutableListOf<GestureRecognizerResult>()
         val numberOfFrameToRead = videoLengthMs.div(inferenceIntervalMs)
 
         for (i in 0..numberOfFrameToRead) {
-            val timestampMs = i * inferenceIntervalMs // ms
+            val timestampMs = i * inferenceIntervalMs
 
             retriever
                 .getFrameAtTime(
-                    timestampMs * 1000, // convert from ms to micro-s
+                    timestampMs * 1000,
                     MediaMetadataRetriever.OPTION_CLOSEST
                 )
                 ?.let { frame ->
-                    // Convert the video frame to ARGB_8888 which is required by the MediaPipe
                     val argb8888Frame =
                         if (frame.config == Bitmap.Config.ARGB_8888) frame
                         else frame.copy(Bitmap.Config.ARGB_8888, false)
 
-                    // Convert the input Bitmap object to an MPImage object to run inference
                     val mpImage = BitmapImageBuilder(argb8888Frame).build()
 
-                    // Run gesture recognizer using MediaPipe Gesture Recognizer
-                    // API
                     gestureRecognizer?.recognizeForVideo(mpImage, timestampMs)
                         ?.let { recognizerResult ->
                             resultList.add(recognizerResult)
@@ -256,8 +223,6 @@ class GestureRecognizerHelper(
         }
     }
 
-    // Accepted a Bitmap and runs gesture recognizer inference on it to
-    // return results back to the caller
     fun recognizeImage(image: Bitmap): ResultBundle? {
         if (runningMode != RunningMode.IMAGE) {
             throw IllegalArgumentException(
@@ -266,15 +231,10 @@ class GestureRecognizerHelper(
             )
         }
 
-
-        // Inference time is the difference between the system time at the
-        // start and finish of the process
         val startTime = SystemClock.uptimeMillis()
 
-        // Convert the input Bitmap object to an MPImage object to run inference
         val mpImage = BitmapImageBuilder(image).build()
 
-        // Run gesture recognizer using MediaPipe Gesture Recognizer API
         gestureRecognizer?.recognize(mpImage)?.also { recognizerResult ->
             val inferenceTimeMs = SystemClock.uptimeMillis() - startTime
             return ResultBundle(
@@ -285,17 +245,10 @@ class GestureRecognizerHelper(
             )
         }
 
-        // If gestureRecognizer?.recognize() returns null, this is likely an error. Returning null
-        // to indicate this.
         gestureRecognizerListener?.onError(
             "Gesture Recognizer failed to recognize."
         )
         return null
-    }
-
-    // Return running status of the recognizer helper
-    fun isClosed(): Boolean {
-        return gestureRecognizer == null
     }
 
     private fun returnLivestreamResult(
@@ -311,12 +264,36 @@ class GestureRecognizerHelper(
         )
     }
 
-    // Return errors thrown during recognition to this GestureRecognizerHelper's
-    // caller
     private fun returnLivestreamError(error: RuntimeException) {
         gestureRecognizerListener?.onError(
             error.message ?: "An unknown error has occurred"
         )
+    }
+
+    fun isClosed(): Boolean {
+        return gestureRecognizer == null
+    }
+
+    // Integrated functionality from GestureListenerTest
+    fun triggerPointingUpAction() {
+        println("Pointing Up Gesture Recognized!")
+    }
+
+    fun triggerPalmAction() {
+        val audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+
+        if (audioManager.isMusicActive) {
+            audioManager.requestAudioFocus(null, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN)
+        } else {
+            audioManager.requestAudioFocus(null, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN)
+        }
+
+        println("Palm Recognized!")
+        Log.e("myNameJeff", "Palm found!")
+    }
+
+    fun triggerPointingDownAction() {
+        println("Pointing Down Gesture Recognized!")
     }
 
     companion object {
@@ -343,64 +320,4 @@ class GestureRecognizerHelper(
         fun onError(error: String, errorCode: Int = OTHER_ERROR)
         fun onResults(resultBundle: ResultBundle)
     }
-
-    class GestureListenerTest : GestureRecognizerListener {
-        override fun onError(error: String, errorCode: Int) {
-            // Handle error
-            println("Error: $error, Code: $errorCode")
-        }
-
-        override fun onResults(resultBundle: ResultBundle) {
-            val results = resultBundle.results
-
-            for (result in results) {
-                val gestures = result.gestures()
-                for (gesture in gestures) {
-                    for (category in gesture) {
-                        // Check the recognized gesture and perform actions accordingly
-                        when (category.displayName()) {
-                            "Pointing_Up" -> {
-                                // Run code for pointing up gesture
-                                // Example: trigger some action
-                                triggerPointingUpAction()
-                            }
-
-                            "Open_Palm" -> {
-                                // Run code for another gesture
-                                // Example: trigger a different action
-                                triggerPalmAction()
-                            }
-
-                            "Closed_Fist" -> {
-                                triggerClosedAction()
-                            }
-                            // Add more cases for other gestures as needed
-                            else -> {
-                                // Handle unrecognized or additional gestures
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        private fun triggerPointingUpAction() {
-            // Your code to handle the pointing up gesture
-            // Example: show a message, start an animation, etc.
-            println("Pointing Up Gesture Recognized!")
-        }
-
-        private fun triggerPalmAction() {
-            // Your code to handle another gesture
-            // Example: perform a specific action
-            println("Palm Recognized!")
-        }
-
-        private fun triggerClosedAction() {
-            // Your code to handle another gesture
-            // Example: perform a specific action
-            println("Closed fist Recognized!")
-        }
-    }
 }
-

@@ -126,6 +126,15 @@ class GestureRecognizerTest {
         // Verify that the categories are not empty
         assert(categories.isNotEmpty())
 
+        // Iterate through recognized categories
+        for (category in categories) {
+            // Check for a specific gesture and trigger the corresponding action
+            if (category.categoryName() == "Open_Palm") {
+                gestureRecognizerHelper.triggerPalmAction()
+            }
+        }
+
+
         // Verify that the scores are correct
         assertEquals(
             expectedCategoriesForImageAndLiveStreamMode.first().score(),
