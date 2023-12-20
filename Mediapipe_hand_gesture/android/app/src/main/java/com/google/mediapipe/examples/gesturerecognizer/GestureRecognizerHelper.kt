@@ -17,10 +17,17 @@ package com.google.mediapipe.examples.gesturerecognizer
 
 import android.content.Context
 import android.media.AudioManager
+import android.view.KeyEvent
 import android.graphics.Bitmap
 import android.graphics.Matrix
+import android.media.AudioAttributes
+import android.media.AudioFocusRequest
 import android.media.MediaMetadataRetriever
+import android.media.MediaPlayer
 import android.net.Uri
+import android.os.Build
+import android.os.Handler
+import android.os.Looper
 import android.os.SystemClock
 import android.util.Log
 import androidx.annotation.VisibleForTesting
@@ -257,12 +264,22 @@ class GestureRecognizerHelper(
         val finishTimeMs = SystemClock.uptimeMillis()
         val inferenceTime = finishTimeMs - result.timestampMs()
 
+        for (gestureList in result.gestures()) {
+            for (category in gestureList) {
+                val categoryName = category.categoryName()
+                Log.d("Gestures:", "Recognized category: $categoryName")
+                if (category.categoryName() == "stop_start") {
+                    triggerPalmAction(context)
+                }
+            }
+        }
         gestureRecognizerListener?.onResults(
             ResultBundle(
                 listOf(result), inferenceTime, input.height, input.width
             )
         )
     }
+
 
     private fun returnLivestreamError(error: RuntimeException) {
         gestureRecognizerListener?.onError(
@@ -274,26 +291,48 @@ class GestureRecognizerHelper(
         return gestureRecognizer == null
     }
 
-    // Integrated functionality from GestureListenerTest
     fun triggerPointingUpAction() {
         println("Pointing Up Gesture Recognized!")
     }
 
-    fun triggerPalmAction() {
-        val audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+    fun triggerPalmAction(context: Context) {
+        Log.d("play/pauseFunction", "in Play/Pause function")
+        togglePlayPause(context)
 
-        if (audioManager.isMusicActive) {
-            audioManager.requestAudioFocus(null, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN)
-        } else {
-            audioManager.requestAudioFocus(null, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN)
-        }
-
-        println("Palm Recognized!")
-        Log.e("myNameJeff", "Palm found!")
     }
 
     fun triggerPointingDownAction() {
         println("Pointing Down Gesture Recognized!")
+    }
+
+    private var lastToggleTime: Long = 0
+    private val toggleDelay: Long = 2000
+    private val handler = Handler(Looper.getMainLooper())
+
+    fun togglePlayPause(context: Context) {
+        val currentTime = System.currentTimeMillis()
+
+        if (currentTime - lastToggleTime > toggleDelay) {
+            lastToggleTime = currentTime
+
+            val audioManager = context.getSystemService(Context.AUDIO_SERVICE) as AudioManager
+
+            if (audioManager.isMusicActive) {
+                // Music is currently playing, pause it
+                audioManager.dispatchMediaKeyEvent(KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_MEDIA_PAUSE))
+                audioManager.dispatchMediaKeyEvent(KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_MEDIA_PAUSE))
+            } else {
+                // Music is paused, play it
+                audioManager.dispatchMediaKeyEvent(KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_MEDIA_PLAY))
+                audioManager.dispatchMediaKeyEvent(KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_MEDIA_PLAY))
+            }
+        } else {
+            // Handle consecutive toggles within the delay period (optional)
+            handler.removeCallbacksAndMessages(null)
+            handler.postDelayed({
+                lastToggleTime = System.currentTimeMillis()
+            }, toggleDelay)
+        }
     }
 
     companion object {
